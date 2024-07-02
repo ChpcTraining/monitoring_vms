@@ -13,31 +13,6 @@
 - Create a suitable directory, e.g. /opt/monitoring_stack, in which you’ll keep a
 number of important configuration files.
 
-```dockerfile
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
-```lua
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
-```ini
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
-```toml
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
-```html
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
 ```css
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
