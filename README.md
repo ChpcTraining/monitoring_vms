@@ -13,7 +13,42 @@
 - Create a suitable directory, e.g. /opt/monitoring_stack, in which you’ll keep a
 number of important configuration files.
 
-```json
+```ruby
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```py
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```js
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```php
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```html
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```css
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```sql
+mkdir /opt/monitoring_stack/
+cd /opt/monitoring_stack/
+```
+
+```yml
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
