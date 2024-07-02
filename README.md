@@ -18,16 +18,6 @@ mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
 
-```sql
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
-```yml
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
-
 - In /opt/monitoring_stack/, create a docker-compose.yml file containing the
 following lines:
 
