@@ -13,22 +13,22 @@
 - Create a suitable directory, e.g. /opt/monitoring_stack, in which you’ll keep a
 number of important configuration files.
 
-```ruby
+```dockerfile
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
 
-```py
+```lua
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
 
-```js
+```ini
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
 
-```php
+```toml
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
