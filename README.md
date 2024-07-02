@@ -13,7 +13,7 @@
 - Create a suitable directory, e.g. /opt/monitoring_stack, in which you’ll keep a
 number of important configuration files.
 
-```bash
+```json
 mkdir /opt/monitoring_stack/
 cd /opt/monitoring_stack/
 ```
