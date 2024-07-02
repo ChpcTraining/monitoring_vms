@@ -107,6 +107,20 @@ $ docker compose up -d
 ✔ Container monitoring_stack-node-exporter-1 Started 0.2s
 ```
 
+Then do 
+
+```css
+docker ps
+```
+
+```
+/opt/monitoring_stack$ docker ps
+CONTAINER ID   IMAGE                COMMAND                  CREATED      STATUS        PORTS                                       NAMES
+2b707570dc41   grafana/grafana      "/run.sh"                6 days ago   Up 12 hours   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   monitoring_stack-grafana-1
+ea730ef94381   prom/prometheus      "/bin/prometheus --c…"   6 days ago   Up 10 hours   0.0.0.0:9090->9090/tcp, :::9090->9090/tcp   monitoring_stack-prometheus-1
+704dfa94ecf3   prom/node-exporter   "/bin/node_exporter"     6 days ago   Up 12 hours   0.0.0.0:9100->9100/tcp, :::9100->9100/tcp   monitoring_stack-node-exporter-1
+```
+
 Now let us verify the services!
 
 # Prometheus
