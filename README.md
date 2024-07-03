@@ -3,7 +3,7 @@
 # Pre-requisites
 
 1. Rocky 9.03 VM and ssh keys working
-2. Install Docker Enginer: using apt repo: [https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository](https://docs.docker.com/engine/install/rhel/#install-using-the-repository)
+2. Install Docker Enginer: using repo: [https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository](https://docs.docker.com/engine/install/rhel/#install-using-the-repository)
 
 
 # Installation via docker-compose
