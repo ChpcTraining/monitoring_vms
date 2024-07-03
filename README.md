@@ -16,7 +16,7 @@ number of important configuration files.
 Input the following:
 
 > ```
-> mkdir /opt/monitoring_stack/
+> sudo mkdir /opt/monitoring_stack/
 > cd /opt/monitoring_stack/
 > ```
 
