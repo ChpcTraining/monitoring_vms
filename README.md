@@ -23,7 +23,7 @@ Input the following:
 - In /opt/monitoring_stack/, create a docker-compose.yml file containing the
 following lines:
 
-`nano /opt/monitoring_stack/docker-compose.yml`:
+`sudo nano /opt/monitoring_stack/docker-compose.yml`:
 
 ```
 version: '3'
@@ -65,7 +65,7 @@ networks:
 
 - We then need to create two additional files, firstly:
 
-`nano /opt/monitoring_stack/prometheus.yml`:
+`sudo nano /opt/monitoring_stack/prometheus.yml`:
 
 ```
 global:
@@ -79,7 +79,7 @@ scrape_configs:
 
 - secondly:
 
-`nano /opt/monitoring_stack/prometheus-datasource.yaml`:
+`sudo nano /opt/monitoring_stack/prometheus-datasource.yaml`:
 
 ```
 apiVersion: 1
