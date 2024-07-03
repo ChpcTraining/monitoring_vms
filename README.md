@@ -262,7 +262,7 @@ Click on New -> Import
 
 Input: 1860 and click Load 
 
-![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/1126e48d-dcc1-42b4-a55c-ec29affdb99e)
+![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/d8cda594-0468-4ec0-876a-7beeaf79589f)
 
 Click on source: "Prometheus"
 
