@@ -260,14 +260,16 @@ Click on New -> Import
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/4efa0d71-7278-454d-a815-8b6f1f1c72a3)
 
-Input: 1893 and click Load !!! fix wrong ip
+Input: 1860 and click Load 
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/1126e48d-dcc1-42b4-a55c-ec29affdb99e)
 
-Click on source: "Node Exporter"
+Click on source: "Prometheus"
 
-!!! Pending Image !!!
+![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/257351d2-f078-4140-9a37-0b8a4b1b59b8)
 
-![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/193dbb90-7acd-4aba-80cb-7291bcc24f95)
+
+![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/0568acc5-5248-4b90-8803-5f58d2af11e2)
+
 
 ## Alerts
