@@ -13,10 +13,12 @@
 - Create a suitable directory, e.g. /opt/monitoring_stack, in which you’ll keep a
 number of important configuration files.
 
-```css
-mkdir /opt/monitoring_stack/
-cd /opt/monitoring_stack/
-```
+Input the following:
+
+> ```
+> mkdir /opt/monitoring_stack/
+> cd /opt/monitoring_stack/
+> ```
 
 - In /opt/monitoring_stack/, create a docker-compose.yml file containing the
 following lines:
@@ -92,9 +94,9 @@ datasources:
 
 Use:
 
-```
-docker compose up -d
-```
+> ```
+> docker compose up -d
+> ```
 
 You should then see:
 
@@ -109,9 +111,9 @@ $ docker compose up -d
 
 Then do 
 
-```css
-docker ps
-```
+> ```
+> docker ps
+> ```
 
 ```
 /opt/monitoring_stack$ docker ps
@@ -127,9 +129,9 @@ Now let us verify the services!
 
 Input:
 
-```
-curl -s localhost:9090/metrics | head
-```
+> ```
+> curl -s localhost:9090/metrics | head
+> ```
 
 You should see:
 
@@ -166,9 +168,9 @@ What happens if you don't see the expected output?
 
 Input:
 
-```
-curl -s localhost:9100/metrics | hea
-```
+> ```
+> curl -s localhost:9100/metrics | hea
+> ```
 
 You should see:
 
@@ -206,9 +208,9 @@ What happens if you don't see the expected output?
 
 Input the following:
 
-```
-curl -s localhost:3000 | head
-```
+> ```
+> curl -s localhost:3000 | head
+> ```
 
 You should see:
 
@@ -228,9 +230,9 @@ $ curl -s -u admin:admin localhost:3000 | head
 
 Now you can also go to a local browser and see it:
 
-```
-http://localhost:3000
-```
+> ```
+> http://localhost:3000
+> ```
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/abee2bcd-3f6c-437b-aee7-edfa31550d42)
 
@@ -239,9 +241,9 @@ http://localhost:3000
 
 Go to a browser and input:
 
-```
-http://localhost:3000
-```
+> ```
+> http://localhost:3000
+> ```
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/abee2bcd-3f6c-437b-aee7-edfa31550d42)
 
