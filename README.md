@@ -74,7 +74,7 @@ global:
 scrape_configs:
   - job_name: 'node-exporter'
     static_configs:
-      - targets: ['localhost:9100']
+      - targets: ['node-exporter:9100']
 ```
 
 - secondly:
