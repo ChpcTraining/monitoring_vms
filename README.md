@@ -4,8 +4,7 @@
 
 1. Rocky 9.03 VM and ssh keys working
 2. Install Docker Enginer: using apt repo: [https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository](https://docs.docker.com/engine/install/rhel/#install-using-the-repository)
-- tip: do https://docs.docker.com/engine/install/linux-postinstall/
-3. Docker compose should be installed by default
+
 
 # Installation via docker-compose
 - Pre-requisites: each host involved needs to have docker-ce and docker-compose installed as mentioned in the previous section
