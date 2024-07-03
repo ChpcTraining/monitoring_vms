@@ -169,7 +169,7 @@ What happens if you don't see the expected output?
 Input:
 
 > ```
-> curl -s localhost:9100/metrics | hea
+> curl -s localhost:9100/metrics | head
 > ```
 
 You should see:
