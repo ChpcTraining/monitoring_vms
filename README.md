@@ -2,7 +2,7 @@
 
 # Pre-requisites
 
-1. Ubuntu 22.04 VM or similar
+1. Rocky 9.03 VM and ssh keys working
 2. Install Docker Enginer: using apt repo: https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 - tip: input commands line-by-line not all at once
 - tip: do https://docs.docker.com/engine/install/linux-postinstall/
@@ -228,7 +228,23 @@ $ curl -s -u admin:admin localhost:3000 | head
 <title>Grafana</title>
 ```
 
-Now you can also go to a local browser and see it:
+Now you can also go to a local browser. 
+
+Open a new terminal and run the tunnel command (replace xxx.xxx.xxx.xxx with your unique IP):
+
+> ```
+> $ ssh -L 3000:localhost:3000 rocky@xxx.xxx.xxx.xxx
+> ```
+
+You should see something like this (note you will have a different IP address):
+
+```
+$ ssh -L 3000:localhost:3000 rocky@154.114.57.102
+Last login: Wed Jul  3 12:05:29 2024 from 41.10.78.210
+[rocky@demo-bb ~]$
+```
+
+Then open up a browser
 
 > ```
 > http://localhost:3000
