@@ -5,7 +5,59 @@
 # Pre-requisites
 
 1. Rocky 9.03 VM and ssh keys working
-2. Install Docker Enginer: using repo: [https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository](https://docs.docker.com/engine/install/rhel/#install-using-the-repository)
+2. Install Docker Engine and Docker Compose:
+based on following: [https://docs.docker.com/engine/install/rhel/#install-using-the-repository](https://docs.docker.com/engine/install/rhel/#install-using-the-repository)
+
+Install steps:
+
+- Install the yum-utils package (which provides the yum-config-manager utility) and set up the repository.
+
+```
+sudo yum install -y yum-utils
+```
+
+```
+sudo yum-config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+```
+
+- Install Docker Engine, containerd, and Docker Compose:
+
+```
+sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+> If prompted to accept the GPG key, verify that the fingerprint matches, accept it.
+
+This command installs Docker, but it doesn't start Docker. It also creates a docker group, however, it doesn't add any users to the group by default.
+
+- Start Docker:
+
+```
+sudo systemctl start docker
+```
+
+- Verify that the Docker Engine installation is successful by running the hello-world image:
+
+```
+sudo docker run hello-world
+```
+
+This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+
+You have now successfully installed and started Docker Engine.
+
+- Confirm you have docker compose:
+
+```
+docker compose version
+```
+
+Output:
+
+> ```
+> $ docker compose version
+> Docker Compose version v2.28.1
+> ```
 
 # Top
 
@@ -24,7 +76,9 @@ Input the following:
 - In /opt/monitoring_stack/, create a docker-compose.yml file containing the
 following lines:
 
-`sudo nano /opt/monitoring_stack/docker-compose.yml`:
+> ```
+> sudo nano /opt/monitoring_stack/docker-compose.yml
+> ```
 
 ```
 version: '3'
@@ -66,7 +120,9 @@ networks:
 
 - We then need to create two additional files, firstly:
 
-`sudo nano /opt/monitoring_stack/prometheus.yml`:
+> ```
+> sudo nano /opt/monitoring_stack/prometheus.yml
+> ```
 
 ```
 global:
@@ -80,7 +136,9 @@ scrape_configs:
 
 - secondly:
 
-`sudo nano /opt/monitoring_stack/prometheus-datasource.yaml`:
+> ```
+> sudo nano /opt/monitoring_stack/prometheus-datasource.yaml
+> ```
 
 ```
 apiVersion: 1
