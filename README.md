@@ -212,17 +212,6 @@ go_gc_duration_seconds{quantile="0.25"} 0.000135
 ...
 ```
 
-You can also go to a browser and input: http://localhost:9090
-
-You should see:
-
-![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/02626e71-89e0-4647-99d1-9362e68c97c9)
-
-## Debugging
-
-What happens if you don't see the expected output?
-- check if the services are running
-
 # Node Exporter
 
 Input:
@@ -247,21 +236,6 @@ go_gc_duration_seconds_sum 0.007451006
 go_gc_duration_seconds_count 157
 # HELP go_goroutines Number of goroutines that currently exist
 ```
-
-Now you can also go to a browser and input: http://localhost:9100/
-
-You should see:
-
-![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/ecce0302-87b3-4420-9588-34a7bc8334d7)
-
-If you click on metrics you should see the same output you got on the terminal:
-
-![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/252facbd-162e-4b05-bbd2-3db99228c02f)
-
-## Debugging
-
-What happens if you don't see the expected output?
-- check if the services are running
 
 # Grafana
 
@@ -351,5 +325,3 @@ Then you should see:
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/0568acc5-5248-4b90-8803-5f58d2af11e2)
 
-
-## Alerts
