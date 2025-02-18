@@ -54,7 +54,7 @@ Update Grafana to port 80 in `docker-compose.yml`
 And update `prometheus.yml` to connect to VM2
 
 ```
-targets: ['node-exporter:9100', '154.114.57.225:9100']
+targets: ['node-exporter:9100', '154.114.57.225:9101']
 ```
 
 Do Docker down and up.
