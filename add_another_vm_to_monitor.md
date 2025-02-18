@@ -64,3 +64,8 @@ Then check that you can read data from VM2:
 ```
 curl -s 154.114.57.225:9101/metrics | head
 ```
+
+Now in the dashboard you should see the IP hosted there:
+
+![image](https://github.com/user-attachments/assets/fe195cd1-ebec-4b53-b926-116d521d746d)
+
