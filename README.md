@@ -219,6 +219,8 @@ networks:
     driver: bridge
 ```
 
+> If you want to make grafana publically available then change ports to `80:3000`
+
 - We then need to create two additional files, firstly:
 
 Input:
