@@ -436,7 +436,9 @@ Then you should see:
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/0568acc5-5248-4b90-8803-5f58d2af11e2)
 
-# Adding Persistant Storage as Volume
+# Adding Persistant Storage as Volume and Config File
+
+Copy default grafana.ini file to working directory, this to allow for any user.
 
 Create folders and set permissions
 
@@ -480,6 +482,7 @@ services:
       GF_SECURITY_ADMIN_PASSWORD: admin
     volumes:
       - /opt/monitoring_stack/prometheus-datasource.yaml:/etc/grafana/provisioning/datasources/prometheus-datasource.yaml
+      - /opt/monitoring_stack/grafana.ini:/etc/grafana/grafana.ini
       - /opt/monitoring_stack/grafana-data:/var/lib/grafana  # Persist Grafana data
     networks:
       - monitoring-network
