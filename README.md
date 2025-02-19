@@ -436,3 +436,57 @@ Then you should see:
 
 ![image](https://github.com/ChpcTraining/monitoring_vms/assets/157092105/0568acc5-5248-4b90-8803-5f58d2af11e2)
 
+# Adding Persistant Storage as Volume
+
+Create folders and set permissions
+
+```
+sudo mkdir -p /opt/monitoring_stack/grafana-data
+sudo mkdir -p /opt/monitoring_stack/prometheus-data
+sudo chown -R 472:472 /opt/monitoring_stack/grafana-data  # Grafana runs as UID 472
+sudo chown -R 65534:65534 /opt/monitoring_stack/prometheus-data  # Prometheus runs as nobody:nogroup
+```
+
+Then update `docker-compose.yml`
+
+```
+version: '3'
+services:
+  node-exporter:
+    image: prom/node-exporter
+    ports:
+      - "9100:9100"
+    restart: always
+    networks:
+      - monitoring-network
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    restart: always
+    volumes:
+      - /opt/monitoring_stack/prometheus.yml:/etc/prometheus/prometheus.yml
+      - /opt/monitoring_stack/prometheus-data:/prometheus  # Persist Prometheus data
+    networks:
+      - monitoring-network
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "80:3000"
+    restart: always
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - /opt/monitoring_stack/prometheus-datasource.yaml:/etc/grafana/provisioning/datasources/prometheus-datasource.yaml
+      - /opt/monitoring_stack/grafana-data:/var/lib/grafana  # Persist Grafana data
+    networks:
+      - monitoring-network
+
+networks:
+  monitoring-network:
+    driver: bridge
+```
+
+Then down and up docker...
